@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -103,5 +103,269 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+} */
+
+/* General classes */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.stuff:hover {
+  cursor: pointer;
+}
+
+/* general color */
+ .body{
+  background-color: #e9e5e5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+ }
+/* center */
+.center {
+  text-align: center;
+}
+
+/* white */
+.bgc-white{
+  background-color: white;
+}
+.t-white h3{
+  color: white;
+}
+
+.bgc-pink{
+  background-color: #EF257A;
+}
+
+.bgc-blue{
+  background-color: #651FFF;
+}
+
+.bgc-orange{
+  background-color: #E85808;
+}
+
+/* official colour */
+.codetrail-bg{
+  background-color: rgb(95, 76, 165);
+}
+.codetrail{
+  color: rgb(95, 76, 165);
+}
+
+.padder{
+  padding: 1rem;
+}
+/* Margin top */
+.marg-t1 {
+  margin-top: 1rem;
+}
+.marg-t2 {
+  margin-top: 2rem;
+}
+.marg-t3 {
+  margin-top: 3.5rem;
+}
+.marg-t4 {
+  margin-top: 5.5rem;
+}
+.marg-t5 {
+  margin-top: 8rem;
+}
+/* Margin top ends */
+/* Margin bottom */
+.marg-b1 {
+  margin-bottom: 1rem;
+}
+.marg-b2 {
+  margin-bottom: 2rem;
+}
+.marg-b3 {
+  margin-bottom: 3.5rem;
+}
+.marg-b4 {
+  margin-bottom: 5.5rem;
+}
+.marg-b5 {
+  margin-bottom: 8rem;
+}
+/* Margin bottom ends */
+
+/* Fixed top */
+.fixedct-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 15;
+}
+
+/* container begins */
+.containerct {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 765px) {
+  .containerct {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .containerct {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .containerct {
+    width: 1170px;
+  }
+}
+/* container ends */
+
+/* fix right */
+.fixedct-right {
+  float: right;
+}
+
+/* fix left */
+.fixedct-left {
+  float: left;
+}
+
+/* btn */
+.btnct {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px 15px;
+  border: 1px solid;
+}
+
+.btnct:hover {
+  border-color: black;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnct-codetrail {
+  border-color: rgb(95, 76, 165);
+  background-color: rgb(95, 76, 165);
+  color: white;
+}
+.btnct-codetrail:hover {
+  border-color: rgb(95, 76, 165);
+  color: rgb(95, 76, 165);
+}
+.btnct-codetrail-white:hover {
+  border-color: white;
+  color: white;
+}
+
+.btnct-big {
+  font-size: larger;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btnct-full{
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 8px;
+  width: 100%;
+  position: relative;
+  margin-left: 0; /* it works as left: 0 */
+  margin-right: 0; /* it works as right: 0 */
+}
+/* btn ends*/
+
+/* nav */
+.navhead{
+  display: inline-block;
+  color: rgb(95, 76, 165);
+}
+.navhead:hover{
+  cursor: pointer;
+}
+.navbarCt{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+
+/* background image */
+.back{
+  margin-top: 4.2rem;
+  color: white;
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+  url("https://www.usnews.com/dims4/USNEWS/ba4676c/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F45%2F12%2F2423ec644d4ab65d28dbf79cc18e%2F201208-programmer-stock.jpg");
+  display: inline-block;
+  height: 400px;
+}
+
+.grid-type{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+.type-head{
+  font-family: "Source Sans Pro",Arial,sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.back-top{
+  padding-top: 6rem;
+}
+.bigT{
+  font-family: "Source Sans Pro",Arial,sans-serif;
+}
+.midT{
+  font-family: "Source Sans Pro",Arial,sans-serif;
+}
+.border-round{
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+@media (max-width: 950px) {
+  .grid-type{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .back-top{
+    padding-top: 4.5rem;
+  }
+  .bigT{
+    font-size: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .grid-type{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .back-top{
+    padding-top: 4.5rem;
+  }
+  .bigT{
+    font-size: 24px;
   }
 }
