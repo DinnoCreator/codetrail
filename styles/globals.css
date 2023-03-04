@@ -314,9 +314,7 @@ body {
 .back{
   margin-top: 4.2rem;
   color: white;
-  background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
-  url("https://www.usnews.com/dims4/USNEWS/ba4676c/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F45%2F12%2F2423ec644d4ab65d28dbf79cc18e%2F201208-programmer-stock.jpg");
+  /* url(""); */
   display: inline-block;
   height: 400px;
 }
@@ -347,6 +345,12 @@ body {
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 }
+
+.flexer{
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+}
 @media (max-width: 950px) {
   .grid-type{
     grid-template-columns: repeat(2, 1fr);
@@ -367,5 +371,10 @@ body {
   }
   .bigT{
     font-size: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .flexer{
+    padding-left: 6rem;
   }
 }
