@@ -373,8 +373,3 @@ body {
     font-size: 24px;
   }
 }
-@media (max-width: 380px) {
-  .flexer{
-    padding-left: 6rem;
-  }
-}
