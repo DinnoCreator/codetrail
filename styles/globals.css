@@ -115,6 +115,7 @@ a {
 
 html,
 body {
+  background-color: #e9e5e5;
   max-width: 100vw;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -128,10 +129,10 @@ body {
 /* general color */
  .body{
   background-color: #e9e5e5;
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: auto; */
  }
 /* center */
 .center {
