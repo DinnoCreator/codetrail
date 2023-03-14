@@ -127,47 +127,53 @@ body {
 }
 
 /* general color */
- .body{
+.body {
   background-color: #e9e5e5;
   /* position: absolute;
   width: 100%;
   height: 100%;
   overflow: auto; */
- }
+}
 /* center */
 .center {
   text-align: center;
 }
+.left {
+  text-align: left;
+}
 
 /* white */
-.bgc-white{
+.bgc-white {
   background-color: white;
 }
-.t-white h3{
+.t-white {
+  color: white;
+}
+.t-white h3 {
   color: white;
 }
 
-.bgc-pink{
-  background-color: #EF257A;
+.bgc-pink {
+  background-color: #ef257a;
 }
 
-.bgc-blue{
-  background-color: #651FFF;
+.bgc-blue {
+  background-color: #651fff;
 }
 
-.bgc-orange{
-  background-color: #E85808;
+.bgc-orange {
+  background-color: #e85808;
 }
 
 /* official colour */
-.codetrail-bg{
+.codetrail-bg {
   background-color: rgb(95, 76, 165);
 }
-.codetrail{
+.codetrail {
   color: rgb(95, 76, 165);
 }
 
-.padder{
+.padder {
   padding: 1rem;
 }
 /* Margin top */
@@ -247,6 +253,10 @@ body {
 .fixedct-left {
   float: left;
 }
+/* fix bottom */
+/* .fixedct-bottom {
+  float: calc(-y);
+} */
 
 /* btn */
 .btnct {
@@ -286,7 +296,7 @@ body {
   padding-right: 20px;
 }
 
-.btnct-full{
+.btnct-full {
   text-align: center;
   font-size: larger;
   padding-bottom: 8px;
@@ -298,21 +308,21 @@ body {
 /* btn ends*/
 
 /* nav */
-.navhead{
+.navhead {
   display: inline-block;
   color: rgb(95, 76, 165);
 }
-.navhead:hover{
+.navhead:hover {
   cursor: pointer;
 }
-.navbarCt{
+.navbarCt {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: white;
 }
 
 /* background image */
-.back{
+.back {
   margin-top: 4.2rem;
   color: white;
   /* url(""); */
@@ -320,7 +330,7 @@ body {
   height: 400px;
 }
 
-.grid-type{
+.grid-type {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
@@ -328,49 +338,150 @@ body {
   width: min(95%, 70rem);
   margin-inline: auto;
 }
-.type-head{
-  font-family: "Source Sans Pro",Arial,sans-serif;
+.MuiOutlinedInput-notchedOutline {
+  border-radius: 20px !important;
+}
+.followSearch{
+  border-radius: 20px;
+}
+/* .MuiOutlinedInput-notchedOutline{
+  background-color: white;
+} */
+.student-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+.type-head {
+  font-family: "Source Sans Pro", Arial, sans-serif;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.back-top{
+.back-top {
   padding-top: 6rem;
 }
-.bigT{
-  font-family: "Source Sans Pro",Arial,sans-serif;
+.bigT {
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
-.midT{
-  font-family: "Source Sans Pro",Arial,sans-serif;
+.midT {
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
-.border-round{
+.border-round {
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 }
 
-.flexer{
+.flexer {
   display: flex;
   justify-content: center;
   overflow-x: scroll;
 }
+
+.leftct-bar {
+  width: 17%;
+  height: 100vh;
+  color: white;
+}
+.leftct-content{
+  padding:  1.5rem 1rem;
+}
+
+.icon{
+  margin: 1rem;
+}
+
+.link{
+  font-size: 14px;
+}
+
+.grid-left {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  /* width: min(95%, 70rem); */
+}
+
+.block{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+.small{
+  display: none;
+}
+
+.ticketStrip{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.em{
+  font-weight: 700;
+}
+
+.ht{
+  font-size: 16px;
+}
+.bt{
+  font-size: 14px;
+}
+
+@media (max-width: 1023px) {
+  .left-head{
+    font-size: 20px;
+  }
+}
 @media (max-width: 950px) {
-  .grid-type{
+  .grid-type {
     grid-template-columns: repeat(2, 1fr);
   }
-  .back-top{
+  .back-top {
     padding-top: 4.5rem;
   }
-  .bigT{
+  .bigT {
     font-size: 24px;
   }
 }
-@media (max-width: 650px) {
-  .grid-type{
+@media (max-width: 700px) {
+  .grid-left{
+    height: 100%;
+  }
+  .grid-type {
     grid-template-columns: repeat(1, 1fr);
   }
-  .back-top{
+  .back-top {
     padding-top: 4.5rem;
   }
-  .bigT{
+  .bigT {
     font-size: 24px;
   }
+  .small{
+    display: block;
+  }
+  .grid-left{
+    display: none;
+  }
+  .student-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+    margin-top: 0;
+  }
+  .normal{
+    display: none;
+  }
 }
+
+
