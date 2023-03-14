@@ -8,17 +8,18 @@ import Badge from "@mui/material/Badge";
 import IconButton from "@mui/material/IconButton";
 import RouteIcon from "@mui/icons-material/Route";
 import { useState } from "react";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DateCalendar } from '@mui/x-date-pickers';
+import { DateCalendar } from "@mui/x-date-pickers";
 // import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+import dynamic from "next/dynamic";
 
 const StudentContent = () => {
-    // const [value, setValue] = React.useState([
-    //   dayjs('2022-04-17'),
-    //   dayjs('2022-04-21'),
-    // ]);
+  // const [value, setValue] = React.useState([
+  //   dayjs('2022-04-17'),
+  //   dayjs('2022-04-21'),
+  // ]);
   // Shows courses when searching
   const topCourses = [
     { title: "C" },
@@ -49,7 +50,7 @@ const StudentContent = () => {
   return (
     <div className="student-grid">
       <div>
-        <h2>My Classes</h2>
+        <h2 className="center">My Classes</h2>
         <div className="marg-t2 normal">
           <div className="ticketStrip padder codetrail-bg t-white">
             <span className="em ht">
@@ -109,10 +110,10 @@ const StudentContent = () => {
           </div>
         </div>
         <div className="marg-t1">
-          <h4>Next Event</h4>
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DateCalendar readOnly={true} defaultValue={dayjs('2022-04-17')}/>
-          </LocalizationProvider>
+        <p >Next event</p>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DateCalendar defaultValue={dayjs("2022-04-17")} />
+        </LocalizationProvider>
         </div>
       </div>
       <div>
@@ -128,22 +129,8 @@ const StudentContent = () => {
           </IconButton>
         </div>
       </div>
-      <div className="marg-t1 small">
-        <div className="ticketStrip padder codetrail-bg t-white">
-          <span className="em ht">
-            Your own education way
-            <span className="fixedct-right">
-              <RouteIcon />
-            </span>
-          </span>
-          <br />
-          <span className="bt">
-            Set your study plan and growth with Codtrail
-          </span>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default StudentContent;
+export default dynamic(() => Promise.resolve(StudentContent), { ssr: false });

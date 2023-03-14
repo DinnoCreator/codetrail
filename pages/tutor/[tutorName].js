@@ -83,17 +83,12 @@ export default function Tutor() {
         </div>
           <StudentContent />
       </div>
-
-      <div className="small">
         <Small>
-          <div className="center containerct">
             <StudentContent />
-          </div>
         </Small>
-      </div>
       <script
         src="https://kit.fontawesome.com/3157f9417c.js"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></script>
     </>
   );

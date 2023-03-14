@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { div  } from "react";
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -84,7 +84,7 @@ const Small = (props) => {
     setOpen(false);
   };
   return (
-    <Fragment>
+    <div className="small">
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <AppBar
@@ -110,7 +110,6 @@ const Small = (props) => {
             >
               CODETRAIL
             </Typography>
-            <div>
               <IconButton
                 size="large"
                 aria-label="show 17 new notifications"
@@ -120,7 +119,6 @@ const Small = (props) => {
                   <NotificationsIcon />
                 </Badge>
               </IconButton>
-            </div>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -198,10 +196,10 @@ const Small = (props) => {
         </Drawer>
         <Main open={open}>
           <DrawerHeader />
-          <Typography paragraph>{props.children}</Typography>
+          {props.children}
         </Main>
       </Box>
-    </Fragment>
+    </div >
   );
 };
 
