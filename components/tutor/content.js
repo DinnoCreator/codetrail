@@ -15,7 +15,7 @@ import { DateCalendar } from "@mui/x-date-pickers";
 // import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import dynamic from "next/dynamic";
 
-const StudentContent = () => {
+const StudentContent = (props) => {
   // const [value, setValue] = React.useState([
   //   dayjs('2022-04-17'),
   //   dayjs('2022-04-21'),
@@ -50,7 +50,8 @@ const StudentContent = () => {
   return (
     <div className="student-grid">
       <div>
-        <h2 className="center">My Classes</h2>
+         <h2 className="center small">Welcome back, {props.name}</h2>
+         <h2 className="normal">Welcome back, {props.name}</h2>
         <div className="marg-t2 normal">
           <div className="ticketStrip padder codetrail-bg t-white">
             <span className="em ht">
@@ -109,12 +110,6 @@ const StudentContent = () => {
             </span>
           </div>
         </div>
-        <div className="marg-t1">
-        <p >Next event</p>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DateCalendar defaultValue={dayjs("2022-04-17")} />
-        </LocalizationProvider>
-        </div>
       </div>
       <div>
         <div className="fixedct-right normal">
@@ -127,6 +122,12 @@ const StudentContent = () => {
               <NotificationsIcon />
             </Badge>
           </IconButton>
+        </div>
+        <div className="marg-t1">
+        <p className="center">Next event</p>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DateCalendar readOnly={true} defaultValue={dayjs("2022-04-17")} />
+        </LocalizationProvider>
         </div>
       </div>
     </div>

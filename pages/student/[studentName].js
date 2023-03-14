@@ -19,11 +19,11 @@ export default function Tutor() {
     return newName;
   };
 
-  const name = router.query.tutorName;
+  const name = router.query.studentName;
   return (
     <>
       <Head>
-        <title>CodeTrail-Tutor</title>
+        <title>CodeTrail-Student</title>
         <meta
           name="description"
           content="Start your career in teach with us."
@@ -81,10 +81,10 @@ export default function Tutor() {
             </div>
           </div>
         </div>
-          <StudentContent />
+          <StudentContent name={name} />
       </div>
         <Small>
-            <StudentContent />
+            <StudentContent name={name} />
         </Small>
       <script
         src="https://kit.fontawesome.com/3157f9417c.js"
