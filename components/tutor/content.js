@@ -110,6 +110,12 @@ const StudentContent = (props) => {
             </span>
           </div>
         </div>
+        <div className="marg-t1">
+        <p className="center">Next event</p>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DateCalendar readOnly={true} defaultValue={dayjs("2022-04-17")} />
+        </LocalizationProvider>
+        </div>
       </div>
       <div>
         <div className="fixedct-right normal">
@@ -122,12 +128,6 @@ const StudentContent = (props) => {
               <NotificationsIcon />
             </Badge>
           </IconButton>
-        </div>
-        <div className="marg-t1">
-        <p className="center">Next event</p>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DateCalendar readOnly={true} defaultValue={dayjs("2022-04-17")} />
-        </LocalizationProvider>
         </div>
       </div>
     </div>
