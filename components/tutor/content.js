@@ -55,14 +55,14 @@ const StudentContent = (props) => {
         <div className="marg-t2 normal">
           <div className="ticketStrip padder codetrail-bg t-white">
             <span className="em ht">
-              Your own education way
+              Learn at your own pace
               <span className="fixedct-right">
                 <RouteIcon />
               </span>
             </span>
             <br />
             <span className="bt">
-              Set your study plan and growth with Codtrail
+              Set your study plan and growth with Codetrail
             </span>
           </div>
         </div>
@@ -99,14 +99,14 @@ const StudentContent = (props) => {
         <div className="marg-t2 small">
           <div className="ticketStrip padder codetrail-bg t-white">
             <span className="em ht">
-              Your own education way
+              Learn at your own pace
               <span className="fixedct-right">
                 <RouteIcon />
               </span>
             </span>
             <br />
             <span className="bt">
-              Set your study plan and growth with Codtrail
+              Set your study plan and growth with Codetrail
             </span>
           </div>
         </div>
