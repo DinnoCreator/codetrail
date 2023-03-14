@@ -198,7 +198,7 @@ const Small = (props) => {
         </Drawer>
         <Main open={open}>
           <DrawerHeader />
-          {props.children}
+          <Typography paragraph>{props.children}</Typography>
         </Main>
       </Box>
     </Fragment>

@@ -94,8 +94,22 @@ const StudentContent = () => {
             )}
           />
         </div>
-
-        <div className="marg-t1 normal">
+        <div className="marg-t2 small">
+          <div className="ticketStrip padder codetrail-bg t-white">
+            <span className="em ht">
+              Your own education way
+              <span className="fixedct-right">
+                <RouteIcon />
+              </span>
+            </span>
+            <br />
+            <span className="bt">
+              Set your study plan and growth with Codtrail
+            </span>
+          </div>
+        </div>
+        <div className="marg-t1">
+          <h4>Next Event</h4>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DateCalendar readOnly={true} defaultValue={dayjs('2022-04-17')}/>
           </LocalizationProvider>
@@ -128,11 +142,6 @@ const StudentContent = () => {
           </span>
         </div>
       </div>
-      <div className="marg-t1 small">
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DateCalendar readOnly={true} defaultValue={dayjs('2022-04-17')}/>
-          </LocalizationProvider>
-        </div>
     </div>
   );
 };
