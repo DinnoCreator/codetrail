@@ -194,7 +194,8 @@ const Small = (props) => {
             </ListItem>
           </List>
         </Drawer>
-        <Main open={open}>
+        <Main 
+          sx={{ backgroundColor: "#e9e5e5" }} open={open}>
           <DrawerHeader />
           {props.children}
         </Main>
