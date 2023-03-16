@@ -123,6 +123,10 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+.body{
+  background-color: #e9e5e5;
+}
 .stuff:hover {
   cursor: pointer;
 }

@@ -81,11 +81,13 @@ export default function Tutor() {
             </div>
           </div>
         </div>
+        <div className="body">
           <StudentContent name={name} />
+        </div>
       </div>
-        <Small>
-            <StudentContent name={name} />
-        </Small>
+      <Small>
+        <StudentContent name={name} />
+      </Small>
       <script
         src="https://kit.fontawesome.com/3157f9417c.js"
         crossOrigin="anonymous"
