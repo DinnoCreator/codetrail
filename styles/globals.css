@@ -408,7 +408,7 @@ body {
 .grid-left {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 8fr;
   /* width: min(95%, 70rem); */
 }
 
