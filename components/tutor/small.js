@@ -1,4 +1,4 @@
-import { div  } from "react";
+import { div } from "react";
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -45,7 +45,6 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
     }),
   })
 );
-
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
@@ -110,15 +109,15 @@ const Small = (props) => {
             >
               CODETRAIL
             </Typography>
-              <IconButton
-                size="large"
-                aria-label="show 17 new notifications"
-                color="inherit"
-              >
-                <Badge badgeContent={17} color="error">
-                  <NotificationsIcon />
-                </Badge>
-              </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Badge badgeContent={17} color="error">
+                <NotificationsIcon />
+              </Badge>
+            </IconButton>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -194,13 +193,12 @@ const Small = (props) => {
             </ListItem>
           </List>
         </Drawer>
-        <Main 
-          sx={{ backgroundColor: "#e9e5e5" }} open={open}>
+        <Main sx={{ backgroundColor: "#e9e5e5" }} open={open}>
           <DrawerHeader />
           {props.children}
         </Main>
       </Box>
-    </div >
+    </div>
   );
 };
 
