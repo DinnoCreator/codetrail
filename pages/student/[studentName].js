@@ -86,7 +86,9 @@ export default function Tutor() {
         </div>
       </div>
       <Small>
-        <StudentContent name={name} />
+        <div className="marg-t3">
+          <StudentContent name={name} />
+        </div>
       </Small>
       <script
         src="https://kit.fontawesome.com/3157f9417c.js"
