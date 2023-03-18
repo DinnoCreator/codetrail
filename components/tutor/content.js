@@ -71,30 +71,7 @@ const StudentContent = (props) => {
             </span>
           </div>
         </div>
-        <div className="marg-t2 small">
-          {/* <Container maxWidth="sm"> */}
-            <div className="ticketStrip padderless bgc-white t-black">
-              <span className="em ht">
-                HTML
-                <div
-                  className="fixedct-right ticketStrip backicon  bgc-white"
-                  style={{
-                    backgroundImage: `url(${html5})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    width: "30px",
-                  }}
-                >
-                  {/* <RouteIcon /> */}
-                </div>
-              </span>
-              <br />
-              <span className="bt">16 Hrs taken/ 20Hrs</span>
-            </div>
-          {/* </Container> */}
-        </div>
-        <div className="marg-t2 normal">
+        <div className="marg-t2">
           <div className="ticketStrip padderless bgc-white t-black">
             <span className="em ht">
               HTML
@@ -115,30 +92,7 @@ const StudentContent = (props) => {
             <span className="bt">16 Hrs taken/ 20Hrs</span>
           </div>
         </div>
-        <div className="marg-t2 small">
-          {/* <Container maxWidth="sm"> */}
-            <div className="ticketStrip padderless bgc-blue t-white">
-              <span className="em ht">
-                CSS
-                <div
-                  className="fixedct-right ticketStrip backicon  bgc-white"
-                  style={{
-                    backgroundImage: `url(${css})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    width: "30px",
-                  }}
-                >
-                  {/* <RouteIcon /> */}
-                </div>
-              </span>
-              <br />
-              <span className="bt">2 Hrs taken/ 20Hrs</span>
-            </div>
-          {/* </Container> */}
-        </div>
-        <div className="marg-t2 normal">
+        <div className="marg-t2">
           <div className="ticketStrip padderless bgc-blue t-white">
             <span className="em ht">
               CSS
@@ -159,30 +113,7 @@ const StudentContent = (props) => {
             <span className="bt">2 Hrs taken/ 20Hrs</span>
           </div>
         </div>
-        <div className="marg-t2 small">
-          {/* <Container maxWidth="sm"> */}
-            <div className="ticketStrip padderless bgc-orange t-white">
-              <span className="em ht">
-                JavaScript
-                <div
-                  className="fixedct-right ticketStrip backicon  bgc-white"
-                  style={{
-                    backgroundImage: `url(${bImage})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    width: "30px",
-                  }}
-                >
-                  {/* <RouteIcon /> */}
-                </div>
-              </span>
-              <br />
-              <span className="bt">1 Hrs taken/ 20Hrs</span>
-            </div>
-          {/* </Container> */}
-        </div>
-        <div className="marg-t2 normal">
+        <div className="marg-t2">
           <div className="ticketStrip padderless bgc-orange t-white">
             <span className="em ht">
               JavaScript
