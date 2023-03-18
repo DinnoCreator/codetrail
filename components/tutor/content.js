@@ -72,7 +72,7 @@ const StudentContent = (props) => {
           </div>
         </div>
         <div className="marg-t2 small">
-          <Container maxWidth="sm">
+          {/* <Container maxWidth="sm"> */}
             <div className="ticketStrip padderless bgc-white t-black">
               <span className="em ht">
                 HTML
@@ -92,7 +92,7 @@ const StudentContent = (props) => {
               <br />
               <span className="bt">16 Hrs taken/ 20Hrs</span>
             </div>
-          </Container>
+          {/* </Container> */}
         </div>
         <div className="marg-t2 normal">
           <div className="ticketStrip padderless bgc-white t-black">
@@ -116,7 +116,7 @@ const StudentContent = (props) => {
           </div>
         </div>
         <div className="marg-t2 small">
-          <Container maxWidth="sm">
+          {/* <Container maxWidth="sm"> */}
             <div className="ticketStrip padderless bgc-blue t-white">
               <span className="em ht">
                 CSS
@@ -136,7 +136,7 @@ const StudentContent = (props) => {
               <br />
               <span className="bt">2 Hrs taken/ 20Hrs</span>
             </div>
-          </Container>
+          {/* </Container> */}
         </div>
         <div className="marg-t2 normal">
           <div className="ticketStrip padderless bgc-blue t-white">
@@ -160,7 +160,7 @@ const StudentContent = (props) => {
           </div>
         </div>
         <div className="marg-t2 small">
-          <Container maxWidth="sm">
+          {/* <Container maxWidth="sm"> */}
             <div className="ticketStrip padderless bgc-orange t-white">
               <span className="em ht">
                 JavaScript
@@ -180,7 +180,7 @@ const StudentContent = (props) => {
               <br />
               <span className="bt">1 Hrs taken/ 20Hrs</span>
             </div>
-          </Container>
+          {/* </Container> */}
         </div>
         <div className="marg-t2 normal">
           <div className="ticketStrip padderless bgc-orange t-white">
@@ -207,7 +207,7 @@ const StudentContent = (props) => {
       <div className="student">
         <h2 className="center small marg-b2">Welcome back, {props.name}</h2>
 
-        <Container maxWidth="sm">
+        {/* <Container maxWidth="sm"> */}
           <div className="bgc-white followSearch">
             <Autocomplete
               freeSolo
@@ -236,8 +236,8 @@ const StudentContent = (props) => {
               )}
             />
           </div>
-        </Container>
-        <Container maxWidth="sm">
+        {/* </Container> */}
+        {/* <Container maxWidth="sm"> */}
           <div className="marg-t2 marg-b2 small">
             <div className="ticketStrip padderless codetrail-bg t-white">
               <span className="em ht">
@@ -252,7 +252,7 @@ const StudentContent = (props) => {
               </span>
             </div>
           </div>
-        </Container>
+        {/* </Container> */}
         <div className="marg-t1">
           <p className="center em">New Events</p>
           <LocalizationProvider dateAdapter={AdapterDayjs}>

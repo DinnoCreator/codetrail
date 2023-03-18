@@ -86,7 +86,7 @@ export default function Tutor() {
         </div>
       </div>
       <Small>
-        <div className="marg-t3">
+        <div className="marg-t5">
           <StudentContent name={name} />
         </div>
       </Small>
