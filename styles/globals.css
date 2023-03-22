@@ -117,14 +117,14 @@ html,
 body {
   /* background-color: #fff; */
   background-color: #e9e5e5;
-  max-width: 100vw;
-  overflow-x: hidden;
+  /* max-width: 100vw;
+  overflow-x: hidden; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
-.body{
+.body {
   background-color: #e9e5e5;
 }
 .stuff:hover {
@@ -182,7 +182,13 @@ body {
 .padderless {
   padding: 0.5rem;
 }
+.greyMatter {
+  color: #aca6a6;
+}
 /* Margin top */
+.marg-t0 {
+  margin-top: 0.5rem;
+}
 .marg-t1 {
   margin-top: 1rem;
 }
@@ -259,11 +265,21 @@ body {
 .fixedct-left {
   float: left;
 }
+.fixedct-bottom {
+  position: fixed;
+  top: 85vh;
+}
 /* fix bottom */
 /* .fixedct-bottom {
   float: calc(-y);
 } */
-
+.displayInline {
+  display: inline-block;
+}
+.proger{
+  position: relative;
+  bottom: 0.6rem;
+}
 /* btn */
 .btnct {
   border-top-right-radius: 5px;
@@ -335,7 +351,7 @@ body {
   display: inline-block;
   height: 400px;
 }
-.backicon{
+.backicon {
   /* url(""); */
   display: inline-block;
   height: 30px;
@@ -362,6 +378,14 @@ body {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+.student-grid1 {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;
@@ -435,21 +459,45 @@ body {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
+.rounder {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.bottomShadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 .em {
   font-weight: 700;
 }
-
+.h0{
+  font-size: 40px;
+}
+.h1-h2{
+  font-size: 28px;
+}
+.h2{
+  font-size: 24px;
+}
 .ht {
   font-size: 14px;
 }
 .bt {
   font-size: 12px;
 }
-/* .flex-container {
+.fixed {
+  position: fixed;
+  height: 150vh;
+}
+
+.invinsible {
+  width: 20vh;
+}
+.flex-container {
   margin-left: auto;
   margin-right: auto;
-} */
+}
 @media (max-width: 1023px) {
   .left-head {
     font-size: 20px;
