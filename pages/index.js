@@ -10,7 +10,7 @@ const HomePage = () => {
         <title>CodeTrail</title>
         <meta
           name='description'
-          content='Start your career in teach with us.'
+          content='Start your career in tech with us.'
         />
       </Head>
         <Home/>

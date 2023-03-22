@@ -30,7 +30,7 @@ export default function Tutor() {
         <title>CodeTrail-Student</title>
         <meta
           name="description"
-          content="Start your career in teach with us."
+          content="Start your career in tech with us."
         />
         {/* FontAwesome */}
         <link
