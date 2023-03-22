@@ -56,7 +56,7 @@ const StudentContent = (props) => {
     <>
       <div className="student-grid">
         <div className="student">
-          <h2>Welcome back, {props.name}</h2>
+          <h2 className="normal">Welcome back, {props.name}</h2>
           <div className="marg-t2">
             <div className="ticketStrip padder codetrail-bg t-white">
               <span className="em ht">
@@ -136,6 +136,7 @@ const StudentContent = (props) => {
           </div>
         </div>
         <div className="student marg-t1">
+          <h2 className="small center marg-b2">Welcome back, {props.name}</h2>
           {/* <Container maxWidth="sm"> */}
           <div className="bgc-white followSearch">
             <Autocomplete
@@ -165,7 +166,7 @@ const StudentContent = (props) => {
               )}
             />
           </div>
-          <div className="marg-t1">
+          <div className="marg-t1 normal">
             <p className="center em">New Events</p>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
@@ -176,7 +177,7 @@ const StudentContent = (props) => {
           </div>
         </div>
         <div className="student marg-t1">
-          <div className="fixedct-right">
+          <div className="fixedct-right normal">
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
